@@ -1,0 +1,33 @@
+select * from newusers;
+
+
+INSERT INTO newUsers (firstName, lastName, age) 
+VALUES('pablo', 'salgado', '22');
+
+
+INSERT INTO newUsers (firstName, lastName, age) 
+VALUES('pablo', 'salgado', '22');
+
+
+CREATE TABLE newUsers(
+id Integer auto_increment,
+firstName varchar(60) not null,
+lastName varchar(60) not null,
+age varchar(32) not null,
+email varchar(80),
+primary key (id)
+);
+
+
+UPDATE newusers SET
+firstName = "Kobe"
+WHERE id = 1;
+
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+alter table newusers drop column email;
+
+
+delete from newusers where id = 3;
